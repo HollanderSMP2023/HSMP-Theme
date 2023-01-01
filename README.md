@@ -36,3 +36,7 @@ npx browserslist@latest --update-db
 sudo php artisan optimize:clear
 
 php artisan up
+
+
+https://i.imgur.com/PIrGK6g.png
+https://i.imgur.com/lfzXqGf.png
