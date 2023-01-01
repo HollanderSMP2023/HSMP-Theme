@@ -1,4 +1,4 @@
-# IceMinecraftTheme
+# Theme
 
 Install script:
 ```sh
