@@ -15,6 +15,7 @@ installTheme(){
     tar -cvf IceMinecraftTheme.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
+    npx browserslist@latest --update-db
     rm -r IceMinecraftTheme
     git clone https://github.com/Angelillo15/IceMinecraftTheme.git
     cd IceMinecraftTheme
@@ -29,13 +30,17 @@ installTheme(){
     curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
     apt update
     apt install -y nodejs
+    npx browserslist@latest --update-db
 
     npm i -g yarn
     yarn
+    npx browserslist@latest --update-db
 
     cd /var/www/pterodactyl
+    npx browserslist@latest --update-db
     yarn build:production
     sudo php artisan optimize:clear
+    npx browserslist@latest --update-db
 
 
 }
@@ -52,7 +57,7 @@ installThemeQuestion(){
 }
 
 repair(){
-    bash <(curl https://raw.githubusercontent.com/Angelillo15/IceMinecraftTheme/main/repair.sh)
+    bash <(curl https://raw.githubusercontent.com/HollanderSMP2023/HSMP-Theme/main/repair.sh)
 }
 
 restoreBackUp(){
@@ -60,10 +65,13 @@ restoreBackUp(){
     cd /var/www/
     tar -xvf IceMinecraftTheme.tar.gz
     rm IceMinecraftTheme.tar.gz
+    npx browserslist@latest --update-db
 
     cd /var/www/pterodactyl
+    npx browserslist@latest --update-db
     yarn build:production
     sudo php artisan optimize:clear
+    npx browserslist@latest --update-db
 }
                                                                                                                            
 printf "${blue} ____       _____        ______          _________________  ____   ____      ______        ______  _______        ______    \n"
