@@ -11,6 +11,7 @@ bash <(curl https://raw.githubusercontent.com/HollanderSMP2023/HSMP-Theme/main/i
 nano /var/www/pterodactyl/resources/scripts/IceMinecraftTheme.css
 ```
 
+```
 cd /var/www/pterodactyl
 
 php artisan down
@@ -38,3 +39,5 @@ npx browserslist@latest --update-db
 sudo php artisan optimize:clear
 
 php artisan up
+
+```
