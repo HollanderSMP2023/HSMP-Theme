@@ -12,6 +12,10 @@ nano /var/www/pterodactyl/resources/scripts/IceMinecraftTheme.css
 ```
 
 ```
+https://i.imgur.com/pu02CiL.png
+```
+
+```
 cd /var/www/pterodactyl
 
 php artisan down
